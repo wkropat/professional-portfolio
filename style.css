@@ -1,0 +1,217 @@
+:root {
+    --light:rgb(204, 211, 235);
+    --dark: rgb(22, 45, 66);
+    --highlight: rgb(77, 173, 169);
+    --navlink-color: #b9c6ae;
+  }
+
+body {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+header {
+    display: flex;
+    width:100%;
+    height:100px;
+    justify-content:space-between;
+    align-items: center;  
+    background-color:var(--dark);
+    color:var(--highlight);
+}
+
+h1 {
+    font-size: 50px;
+    background: var(--highlight);
+    color: var(--dark);
+    text-align:right;
+    width:350px;
+    height:max-content;
+    padding:5px;
+  }
+
+nav ul {
+  justify-content: space-between;
+  width:fit-content;
+  min-width: 400px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 5px;
+  border-bottom:3px solid var(--highlight);
+  color:var(--highlight);
+}
+  
+nav a {
+  color:var(--highlight);
+  font-weight: bold;
+  text-decoration: none;
+}
+  
+nav a:hover {
+color: #fff;
+}  
+
+.subheader {    
+  display: inline-block;
+  position:relative;
+  width:100vw;
+  height:250px;
+  background-image:url("./assets/chihiro014.jpg");
+  background-size:cover; 
+}
+
+h2 {
+  font-size: 40px;
+  background-color:var(--highlight);
+  color:var(--dark);
+  padding:10px;
+  position:absolute;
+  bottom:20px;
+  right:50px;
+  width:fit-content;
+}
+  
+main {
+    display:block flex;
+    justify-content:flex-start;
+    align-items: center;
+    width:100vw;
+}  
+
+section {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin:30px auto;
+  width:max-content;
+  height:fit-content;
+}
+
+.left {
+height:100%;
+/* background-color: lawngreen; */
+}
+
+section h3 {
+  /* background-color: salmon; */
+  font-size:50px;
+  color:var(--dark);
+  text-align:right;
+  padding:0px 10px 100px 30px;
+  margin-top:0px;
+  margin-left:50px;
+  border-right:5px solid var(--dark);
+  height:100%;
+}
+
+section p {
+  height: fit-content;
+  width:60vw;
+  padding:20px;
+}
+
+.work {
+  /* height: fit-content; */
+  display:flex;
+  /* width:fit-content; */
+  padding:20px;
+  width: 60vw;
+  flex-wrap: wrap;
+
+
+}
+
+
+
+article {
+   border: 5px solid var(--highlight);
+   display:flex ;
+   width:20vw;
+   height:200px;
+   margin:10px;
+}
+
+
+#big {
+width: 40vw;
+height:400px;
+}
+
+h4 {
+  background-color: var(--highlight);
+  color:var(--dark);
+  display:flex block;
+  position:absolute;
+  left:0px;
+  bottom:10px;
+  width:150px;
+  height:50px;
+  float:left;
+  z-index:5;
+}
+
+h4 p {
+  background-color: var(--highlight);
+  width:100%;
+  font-weight:normal;
+  font-size: 16px;
+  padding:3px;
+  position:absolute;
+  bottom:10px;
+  left:0px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition:filter 1s;
+
+}
+
+article img:hover {
+  filter:sepia();
+}
+    
+.contact {
+   font-size: 110%;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+}
+  
+section a {
+  margin:10px;
+  padding: 5px;
+  border-bottom:5px solid var(--dark);
+  color:var(--dark);
+  text-decoration: none;
+}
+
+
+/* For screens 768px and smaller */
+
+@media screen and (max-width: 768px) {
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  section p{
+      padding: 0px;
+      min-width: auto;
+  }
+
+  .left {
+      text-align: justify;
+  }
