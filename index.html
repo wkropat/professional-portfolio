@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-
 <body>
-
+    <!-- Header with navigation bar that takes user to respective sections of the page -->
     <header>
         <h1>Lernantino</h1>
         <nav>
@@ -31,61 +30,72 @@
     
 
     <main>
+    <!--  Main page structure. Sections are "About me", "Work", and "Contact me", with title on the left hand side, a middle bar, and content to the right. -->
 
-       <section>
-           <div class="left"><h3> About<br> Me</h3></div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, explicabo maxime error non facilis voluptate perspiciatis culpa dolorem est itaque magni excepturi optio ipsum rerum odio quia quas perferendis totam!
-        Quasi fugiat in laborum cupiditate hic soluta adipisci delectus quae assumenda aspernatur? Odit obcaecati enim earum esse aut ab harum, suscipit maxime voluptas optio vero modi eveniet non, error vel.
-        Distinctio, ad culpa magnam unde deleniti incidunt tempora consequuntur quod asperiores impedit libero dolore, nostrum exercitationem laboriosam, nesciunt temporibus voluptas magni numquam doloribus rerum veritatis tenetur maiores. Odio, eligendi laudantium.
-        <br><br>Tempora voluptatibus, officia ipsam autem aliquid facilis deleniti ab quo necessitatibus perspiciatis qui minus dolorem dolore exercitationem harum reiciendis cum dignissimos dolorum perferendis cumque. Harum nulla nobis porro distinctio consequatur.
-        Harum voluptatem quod ad beatae suscipit, cupiditate eos molestiae adipisci accusamus quo officia voluptatum debitis ducimus possimus non odio voluptas dolor magni numquam ipsam enim cum. Doloremque iste esse facere.
-        Debitis ratione, unde aperiam est illum veritatis rem ducimus provident animi repudiandae tempora labore dolores facere, quas corporis similique quae laudantium quidem. Accusamus nihil ratione commodi labore esse deleniti vero!</p>
-    
+       <section id="AboutMe">
+        <!-- About me has plain text content. -->
+            <div class="left"><h3> About<br> Me</h3></div>
+            <div id="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, explicabo maxime error non facilis voluptate perspiciatis culpa dolorem est itaque magni excepturi optio ipsum rerum odio quia quas perferendis totam!
+                <br><br>
+                Tempora voluptatibus, officia ipsam autem aliquid facilis deleniti ab quo necessitatibus perspiciatis qui minus dolorem dolore exercitationem harum reiciendis cum dignissimos dolorum perferendis cumque. Harum nulla nobis porro distinctio consequatur.</p>
+            </div>
         </section>
 
-        <section>
+        <section id="Work">
+            <!-- Work section has image panels that take user to deployed projects. First panel is full width, next four are a grid. Sepia effect upon hover. -->
             <div class="left"><h3>Work</h3></div>
-            <div class="work">
-                <article id="big">
 
-                    <img src="./assets/chihiro015.jpg" alt="Surf Report">
-                    <h4>Surf Report
+            <div class="work">
+
+                <article id="SurfReport" title="Surf Report">
+                    <div class="float">
+                        <h4>Surf Report</h4><br>
                         <p>MERN Stack</p>
-                    </h4>                </article>
-                <article>
-                    <h4>LED Wall
-                        <p>Node/IoT</p> 
-                    </h4>                          
-                    <img src="./assets/majo002.jpg" alt="LED Wall">
+                    </div>                            
                 </article>
-                <article>
-                    <h4>Calculator
+
+                <article id="LEDWall" title="LEDWall">
+                    <div class="float">
+                    <h4>LED Wall </h4>  
+                    <p>Node/IoT</p> 
+                    </div>                       
+                </article>
+
+                <article id="Calculator" title="Calculator">
+                    <div class="float">
+                    <h4>Calculator</h4>
                         <p>React/Javascript/CSS</p> 
-                    </h4>
-                    <img src="./assets/mononoke023.jpg" alt="Calculator">
+                    </div>
                 </article>
-                <article>
-                    <h4>Pastel Puzzles
+
+                <article id="PastelPuzzles" title="PastelPuzzles">
+                    <div class="float">
+                    <h4>Pastel Puzzles</h4>
                         <p>MERN Stack</p> 
-                    </h4>
-                    <img src="./assets/mononoke024.jpg" alt="Pastel Puzzles">
+                    </div>
                 </article>
-                <article>
-                    <h4>Run Buddy
+
+                <article id="RunBuddy" title="RunBuddy">
+                    <div class="float">
+                        <h4>Run Buddy</h4>
                         <p>HTML/CSS</p> 
-                    </h4>                
-                    <img src="./assets/mononoke025.jpg" alt="Run Buddy">
+                    </div>     
                 </article>
+
              </div>
         </section>
 
-        <section class="contact">
+        <section id="ContactMe">
+            <!-- class="contact"Contact information, right side has links to external social media. -->
             <div class="left"><h3>Contact<br> Me</h3></div>
-            <a href="https://www.github.com/wkropat">555.555.5555</a>
-            <a href="https://www.github.com/wkropat">lernantino@website.com</a>
-            <a href="https://www.github.com/wkropat">Github</a>
-            <a href="https://www.github.com/wkropat">Twitter</a>
-            <a href="https://www.github.com/wkropat">Spotify</a>
+            <div class="links"> 
+                <a href="tel:+05555555555">555.555.5555</a>
+                <a href="mailto:lernantino@website.com">lernantino@website.com</a>
+                <a href="https://www.github.com">Github</a>
+                <a href="https://www.twitter.com">Twitter</a>
+                <a href="https://www.spotify.com">Spotify</a>
+            </div>
         </section>
 
     </main>
