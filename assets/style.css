@@ -52,7 +52,7 @@ nav a {
   position:relative;
   width:100vw;
   height:200px;
-  background-image:url("./assets/chihiro014.jpg");
+  background-image:url("./chihiro014.jpg");
   background-size:cover; 
 }
 
@@ -145,37 +145,40 @@ article:hover {
    font-size: 9px;
    padding:2px;
  }
-
+ 
+ a {
+  text-decoration: none;
+ }
 #SurfReport {
   display:flex;
   width:95%;
   height:300px;
-  background-image:url("./assets/chihiro015.jpg");
+  background-image:url("./chihiro015.jpg");
   background-size:cover; 
 }
 
 #LEDWall {
   width:45%;
   height:150px;
-  background-image:url("./assets/majo002.jpg");
+  background-image:url("./majo002.jpg");
 }
 
 #Calculator {
   width:45%;
   height:150px;
-  background-image:url("./assets/mononoke023.jpg");
+  background-image:url("./mononoke023.jpg");
 }
 
 #PastelPuzzles {
   width:45%;
   height:150px;
-  background-image:url("./assets/mononoke024.jpg");
+  background-image:url("./mononoke024.jpg");
 }
 
 #RunBuddy {
   width:45%;
   height:150px;
-  background-image:url("./assets/mononoke025.jpg");
+  background-image:url("./mononoke025.jpg");
 }
 
 
