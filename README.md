@@ -1,7 +1,7 @@
 # professional-portfolio
-HW#2: Professional Portfolio 
+Professional Portfolio: Electric Boogaloo
 
-Here I have a responsive website for Lernantino. 
+A responsive portfolio website... with content!
 
 ## Deployment 
 
@@ -11,4 +11,4 @@ live site here: [Deployed Site](https://wkropat.github.io/professional-portfolio
 
 ## Screenshot  
 
-![Screenshot]("./assets/screenshot.PNG")
+[Screenshot]("./assets/screenshot.PNG")
