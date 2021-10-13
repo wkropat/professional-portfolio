@@ -14,13 +14,11 @@
     <!-- Header with navigation bar that takes user to respective sections of the page -->
     <header>
         <h1>Whitney Kropat</h1>
-        <nav>
-            <ul>
-                <li><a href="#AboutMe" alt="About Me">About me</a></li>
-                <li><a href="#Work" alt="Work">Work</a></li>
-                <li><a href="#ContactMe" alt="Contact Me">Contact me</a></li>
-                <li><a href="#Resume" alt="Resume">Resume</a></li>
-            </ul>
+        <nav id="navBar">
+            <a href="#AboutMe" alt="About Me">About me</a>
+            <a href="#Work" alt="Work">Work</a>
+            <a href="#ContactMe" alt="Contact Me">Contact me</a>
+            <a href="./assets/resume.pdf" target="_blank" alt="Resume">Resume</a>
         </nav>
     </header>
 
@@ -28,42 +26,28 @@
         <h2>Web developer!</h2>
     </div>
 
-
     <main>
-        <!--  Main page structure. Sections are "About me", "Work", and "Contact me", with title on the left hand side, a middle bar, and content to the right. -->
-
-        <section id="AboutMe">
-            <!-- About me has plain text content. -->
-            <div class="left">
-                <h3> About<br> Me</h3>
-            </div>
-            <div id="content">
+        <!-- About me has plain text content. -->
+        <section>
+            <h3> About<br> Me</h3>
+            <div class="content">
                 <p>I am a web developer in training.
                     <br><br>
                     Based in Seattle, Wa.
                 </p>
             </div>
         </section>
-
-        <section id="Work">
-            <!-- Work section has image panels that take user to deployed projects. First panel is full width, next four are a grid. Sepia effect upon hover. -->
-            <div class="left">
-                <h3>Work</h3>
-            </div>
-
-            <div class="work">
-
-
+        <!-- Work section has image panels that take user to deployed projects.-->
+        <section>
+            <h3>Work</h3>
+            <div class="content">
                 <article id="RecipeBuilder" title="RecipeBuilder">
                     <a href="https://recipebuilder.github.io/recipe-builder/" class="linkEl"></a>
                     <div class="float">
                         <h4>Recipe Builder</h4><br>
                         <p>Javascript/CSS</p>
                     </div>
-
                 </article>
-
-
                 <article id="PasswordGenerator" title="PasswordGenerator">
                     <a href="https://wkropat.github.io/password-generator/" class="linkEl"></a>
                     <div class="float">
@@ -71,7 +55,6 @@
                         <p>Javascript/CSS</p>
                     </div>
                 </article>
-
                 <article id="DayPlanner" title="DayPlanner">
                     <a href="https://wkropat.github.io/workday-scheduler/" class="linkEl"></a>
                     <div class="float">
@@ -79,7 +62,6 @@
                         <p>Javascript/CSS</p>
                     </div>
                 </article>
-
                 <article id="WeatherDashboard" title="WeatherDashboard">
                     <a href="https://wkropat.github.io/weather-dashboard/" class="linkEl"></a>
                     <div class="float">
@@ -87,7 +69,6 @@
                         <p>JS/API</p>
                     </div>
                 </article>
-
                 <article id="CodeQuiz" title="CodeQuiz">
                     <a href="https://wkropat.github.io/code-quiz/" class="linkEl"></a>
                     <div class="float">
@@ -95,16 +76,13 @@
                         <p>HTML/CSS/JS</p>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <section id="ContactMe">
-            <!-- class="contact"Contact information, right side has links to external social media. -->
-            <div class="left">
-                <h3>Contact<br> Me</h3>
-            </div>
-            <div class="links">
+        <!-- class="contact" Contact information, right side has links to external social media. -->
+        <section>
+            <h3>Contact<br> Me</h3>
+            <div class="content" id="contact">
                 <a href="tel:+05555555555">555.555.5555</a>
                 <a href="mailto:wkropat@gmail.com">wkropat@gmail.com</a>
                 <a href="https://www.github.com/wkropat">Github</a>
@@ -112,7 +90,6 @@
                 <a href="https://www.spotify.com">Spotify</a>
             </div>
         </section>
-
     </main>
 
 </body>

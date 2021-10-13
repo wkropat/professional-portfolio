@@ -3,20 +3,20 @@
     --dark: rgb(22, 45, 66);
     --highlight: rgb(77, 173, 169);
     --navlink-color: #b9c6ae;
+  font-family: Arial, Helvetica, sans-serif;
   }
 
-body {
-font-family: Arial, Helvetica, sans-serif;}
+body {}
 
 header {
-    display: flex;
-    width:100%;
+    display:flex;
+    width:100vw;
     height:100px;
     justify-content:space-between;
     align-items: center;  
     background-color:var(--dark);
     color:var(--highlight);
-    min-width: fit-content;
+    min-width:fit-content;
 }
 
 h1 {
@@ -27,32 +27,29 @@ h1 {
     width:fit-content;
     height:fit-content;
     padding:10px 10px 10px 50px;
-  }
+}
 
-nav ul {
+nav {
   justify-content: space-between;
   width:fit-content;
   min-width: 400px;
 }
-
-nav li {
+  
+nav a {
+  color:var(--highlight);
   display: inline-block;
   margin: 5px;
   padding: 5px;
   border-bottom:3px solid var(--highlight);
-  color:var(--highlight);
-}
-  
-nav a {
-  color:var(--highlight);
-
 } 
 
 
-.subheader {    
-  display: inline-block;
+.subheader {        display:flex;
+
+  /* display: block flex; */
   position:relative;
-  width:100%;
+  width:100vw;
+  min-width: 920px;
   height:200px;
   background-image:url("./rainier.jpg");
   background-size:cover; 
@@ -85,37 +82,42 @@ section {
   height:max-content;
 }
 
-.left {
-  width:20%;
+h3 {  
+  display: block;
+  width:20vw;
+  height:100%;
   min-width:fit-content;
-  height:fit-content;
-  display: flex;
-  justify-content:right;
-  align-items: flex-start;
-}
- 
-h3 {
+  /* height:fit-content; */
+  /* display: flex; */
+  /* justify-content:right; */
+  align-items: center;
   font-size:40px;
   color:var(--dark);
   text-align: right;
+  padding: 10px;
+  /* margin-top:0px; */
+  /* margin-left:50px; */
+}
 
-  padding:0px 10px 100px 30px;
-  margin-top:0px;
-  margin-left:50px;
+
+.content {
   height:100%;
-}
-
-#content {
-  height:fit-content;
-  width:60vw;
-  padding:20px;
-  line-height:1.5;
+  flex-wrap: wrap;
+  display:flex;
+  align-items: center;
   border-left:5px solid var(--dark);
-}
+  width:70vw;
+  height:fit-content;
+} 
 
+.content p {
+  line-height:1.5;
+  padding:20px;
+  width:100%;
+}
 .work {
   display:flex;
-  flex-wrap: wrap;
+
   padding:20px;
   width: 60vw;
   border-left:5px solid var(--dark);
@@ -136,7 +138,9 @@ article {
    position: relative;
    margin:10px;
    transition:filter 1s;
-  text-decoration: none;
+   text-decoration: none;
+     min-width:300px;
+
 }
 
 article:hover {
@@ -165,46 +169,44 @@ a {
  
 #RecipeBuilder {
   display:flex;
-  width:95%;
-  height:300px;
-  background-image:url("./chihiro015.jpg");
+  width:100%;
+  height:400px;
+  background-image:url("./cold-hbirdss.JPG");
   background-size:cover; 
 }
 
 #PasswordGenerator {
-  width:45%;
-  height:150px;
-  background-image:url("./majo002.jpg");
+  width:47%;
+  height:300px;
+  background-image:url("./aerial-mountains-wide.jpg");
 }
 
 #DayPlanner {
-  width:45%;
-  height:150px;
-  background-image:url("./mononoke023.jpg");
+  width:47%;
+    height:300px;
+  background-image:url("./aerial-river-wide.jpg");
 }
 
 #WeatherDashboard {
-  width:45%;
-  height:150px;
-  background-image:url("./mononoke024.jpg");
+  width:47%;
+    height:300px;
+  background-image:url("./aerial-snow-wide.jpg");
 }
 
 #CodeQuiz {
-  width:45%;
-  height:150px;
-  background-image:url("./mononoke025.jpg");
+  width:47%;
+    height:300px;
+  background-image:url("./aerial-windmills-wide.jpg");
 }
 
 
-.links {
+ #contact {
   display:flex;
-  align-items: center;
-  border-left:5px solid var(--dark);
-  width:60vw;
-  height:150px;
-}  
+  justify-content: space-between;
 
-.links a {
+ }
+
+#contact a {
   margin:10px;
   padding:5px;
   border-bottom:5px solid var(--dark);
@@ -216,38 +218,46 @@ a {
 
 /* For screens 768px and smaller */
 
- @media screen and (max-width: 768px) {
+ /* @media screen and (max-width: 768px) {
 
-  section {
+  body {
+    width: 100vw;
+    display:flex-box;
     flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  /* #PasswordGenerator {
+    width:100%;
+
+  }
+
+  h3 {
+    width:100%;
+  }
+
+  .content {
+    height:100vw;
+    flex-wrap: wrap;
+    display:flex;
     align-items: center;
-    margin-right: 20px;
+    border-top:5px solid var(--dark);
+    border-left:none;
+    width:100%;
+    height:fit-content;
   }
   
-  section p{
-      padding: 0px;
-      min-width: auto;
+  #DayPlanner {
+    display:flex;
+    width:100%;
   }
-
-  .left {
-      text-align: justify;
-      width:100%;
+  
+  #WeatherDashboard {
+    width:100%;
   }
+  
+  #CodeQuiz {
+    width:100%;
 
-
-
-#content {
-  height:fit-content;
-  width:100vw;
-  padding:20px;
-  line-height:1.5;
-  border-left:5px solid var(--dark);
-}
-
-.work {
-  display:flex;
-  flex-wrap: wrap;
-  padding:20px;
-  width: 60vw;
-  border-left:5px solid var(--dark);
-}}
+  }
+} */ 
